@@ -1,0 +1,226 @@
+
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+
+/* Navigation Bar */
+#logo img {
+    border: 2px solid red;
+    width: 60px;
+    height: 60px;
+    margin: 3px 6px;
+    border-radius: 100px;
+}
+
+#logo {
+    margin: 10px 40px;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 5px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: blue;
+    background-color: teal;
+    border-radius: 10px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 410px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home h1 {
+    text-align: center;
+}
+
+#home::before {
+    content: "";
+    background: url('bgb1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 66%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+    top: 0px;
+    left: 0px;
+}
+
+/* Services Section */
+#services {
+    margin: 35px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    border-radius: 23px;
+    margin: 5px 10px;
+    padding: 35px;
+    background-color: rgb(221, 188, 188);
+}
+
+#services .box img {
+    height: 180px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+.services-container h1 {
+    font-size: 44px;
+}
+
+/* Client Section */
+   #clients{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #clients img{
+       height: 130px;
+   }
+   #client-section{
+       position: relative;
+   }
+   .client-item{
+       padding: 35px;
+   }
+
+   #client-section::before{
+       content: "";
+       position: absolute;
+       background: url('bgb.jpg') no-repeat center center/cover;
+       width: 100%;
+       height: 325px;
+       z-index: -1;
+       opacity: 0.5;
+   }
+
+   /* Contact Section */
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 570px;
+        z-index: -1;
+        opacity: 0.7;
+        background: url('contact.webp') no-repeat center center/cover;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+        
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 10px;
+        
+    }
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo 2', cursive;
+    
+}
+
+    footer{
+        background: black;
+        color: white;
+        padding: 4px 6px;
+    }
+
+
+/* Utility Class */
+.h-primary {
+    font-size: 46px;
+    padding: 12px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.h-secondary {
+    font-size: 35px;
+    padding: 12px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: purple;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    
+}
